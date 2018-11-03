@@ -186,7 +186,19 @@ public int nnaryTreeSize(int branchingFactor, int height)
 public int treeSum(Tree tree)
 {
 	//TODO
-	return 0;
+	int total = tree.getValue();
+	ArrayList<Tree> child = tree.getChildren();
+	
+	for (int i = 0; i < child.size(); ++i)
+	{
+	    total = total + treeSum(child.get(i));
+	   
+	    
+	}
+	
+
+	
+	return total;
 }
     
     /**
