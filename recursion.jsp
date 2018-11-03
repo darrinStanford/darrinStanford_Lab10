@@ -34,7 +34,11 @@ public int factorial(int value)
        */
 
 	//TODO
-	return 0;
+	if (value == 1)
+	{
+	    return value;
+	}
+
 
 
       /*
@@ -46,6 +50,9 @@ public int factorial(int value)
        */
 
 	//TODO
+	int total = value * factorial(value - 1);
+    return total;
+
 
 }
 
