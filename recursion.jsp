@@ -115,24 +115,29 @@ protected final class Tree
     
     public Tree(int value)
     {
-	//TODO
+		//TODO
+        children = new ArrayList<Tree>();
+    	this.value = value;
+
     }
     
     public int getValue()
     {
-	//TODO
-	return 0;
+		//TODO
+        return value;
     }
     
     public ArrayList<Tree> getChildren()
     {
-	//TODO
-	return null;
+      	//TODO
+    	return children;
+
     }
     
     public void add(Tree child)
     {
-	//TODO
+		//TODO
+		children.add(child);
     }
 }
     
