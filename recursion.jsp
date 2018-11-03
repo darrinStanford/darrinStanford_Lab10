@@ -164,13 +164,15 @@ protected final class Tree
      */
 public int nnaryTreeSize(int branchingFactor, int height)
 {
-    if (height == 1) 
-    {
-	//TODO
-	return 0;
-    }
-	//TODO
-	return 0;
+        int total = branchingFactor / branchingFactor;
+    	if (height == 1) 
+    	{
+			//TODO
+			return total;
+    	}
+		//TODO
+		total = branchingFactor * nnaryTreeSize(branchingFactor, height - 1);
+		return total;
 }
 
     /**
